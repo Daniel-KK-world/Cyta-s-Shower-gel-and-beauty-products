@@ -1,0 +1,569 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.hero-img {
+    /* Basic styling */
+    min-width: 100%;
+    height: auto;
+    object-fit: cover; 
+    padding-top:  8px;
+  
+    /* Responsive design */
+    @media (max-width: 768px) {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+.about-img{
+    min-width: 100%;
+    height: 90%;
+    object-fit: cover;
+   
+}
+.ceo-img{
+
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    mask-position: 0%;
+    max-width: 50%;
+    max-height: 70vh;
+}
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    margin: 2px;
+    z-index: 10;
+}
+.image-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to   
+   bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255,   
+   255, 1) 100%);
+  }
+
+
+#welcome h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+#story h2{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#story p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero section */
+#hero-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f61;
+    color: white;
+}
+
+#hero-section img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#hero-section h5 {
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Product overview */
+#overview {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#overview h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.super-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actual-product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actual-product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.actual-product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.actual-product h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.actual-product p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* About section */
+#about {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Contact section */
+#contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #ff6f61;
+    text-decoration: black;
+    
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    justify-content: center;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 25px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .super-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-section h1 {
+        font-size: 2em;
+    }
+
+    #hero-section h5 {
+        font-size: 1em;
+    }
+
+    .actual-product {
+        width: 90%;
+    }
+}
+/* Contact Section */
+#contact-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #e0554a;
+}
+
+/* Map Section */
+#map-container {
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+
+
+nav ul li {
+    margin: 2px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: white;
+    pointer-events: auto;
+    
+    
+}
+
+/* Shop Intro */
+.shop-intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f61;
+    color: white;
+}
+
+.shop-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.shop-intro p {
+    font-size: 1.2em;
+    margin-top: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product p.description {
+    font-size: 1em;
+    color: #666;
+    padding: 0 10px;
+}
+
+.product p.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6f61;
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.product button:hover {
+    background-color: #e0554a;
+}
+
+/* Footer */
+footer nav ul {
+    gap: 15px;
+}
+
+footer nav ul li a {
+    color: white;
+}
+
+footer nav ul li a:hover {
+    color: #ff6f61;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* Responsive shit again */
+@media screen and (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .shop-intro h1 {
+        font-size: 2em;
+    }
+
+    .shop-intro p {
+        font-size: 1em;
+    }
+}
+
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 20px; /* Added padding for spacing */
+    padding-bottom: 2px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px; /* Added gap for better spacing */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .super-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actual-product {
+        width: 90%;
+    }
+
+    #welcome h1 {
+        font-size: 2rem;
+    }
+
+    #story h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+footer nav ul li {
+    flex: 1 1 100%;
+    text-align: center;
+}
